@@ -1,0 +1,406 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text_color:#445232;
+    --yellow-button:#d7be51;
+    --green-button:#a3d39c;
+}
+
+
+body{
+    overflow: hidden;
+}
+
+.projects-section{
+    background: url(../images/Background_Projects2.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.projects-container{
+    width: 100%;
+    height: auto;
+}
+
+.projects-top-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.lifebar{
+    width: 370px;
+    height: auto;
+    margin-right: 45px;
+    margin-top: 10px;
+}
+
+
+.setup-left{
+    display:grid ;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    gap: 5px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+.setup-left img{
+    max-width: 95px;
+    max-height: 95px;
+    object-fit: contain;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.avatar{
+    margin-top: 8px;
+}
+
+.projects-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content-center{
+    display: block;
+    transform: translateY(-50px);
+}
+
+.button-container{
+    margin: 20px 20px;
+    transform: translateX(275px);
+}
+
+.button-contact{
+    background-color:rgba(163, 211, 156,0.6); 
+    color: white; 
+    border: 0.8px solid #d6e621;
+    box-shadow:  6px 6px 6px rgba(0,0,0,0.9),  2px -2px 0 rgba(255,255,255,0.6);
+    border-radius: 15px; 
+    padding: 0px 20px;
+    font-family: 'Avenir'; 
+    font-weight: 600;
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    height: 30px;
+}
+
+.button-contact:hover{
+    font-size:1.5rem ;
+    color: var(--yellow-button);
+}
+
+.aboutme-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    
+}
+
+.background{
+    background-color:rgba(163, 211, 156,0.6);
+    border: 0.8px solid #d6e621;
+    box-shadow:  6px 6px 6px rgba(0,0,0,0.9),  2px -2px 0 rgba(255,255,255,0.6);
+    border-radius: 25px;
+    width:420px; 
+    height: 420px;
+    position: relative;
+    overflow: hidden; 
+    box-sizing: border-box; 
+}
+
+.aboutme-content{
+    background-color:rgba(163, 211, 156,0.8);
+    border: 0.8px solid #d6e621;
+    box-shadow:  6px 6px 6px rgba(0,0,0,0.9),  2px -2px 0 rgba(255,255,255,0.6);
+    border-radius: 25px;
+    width: 380px;
+    height: 380px;
+    margin-left: 18px;
+    margin-top: 20px;
+
+   
+}
+
+.aboutme-content p{
+    font-family: "Mulish";
+    color: var(--text_color);
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 20px;
+    line-height: 0.9rem;
+    margin-top: 5px;
+}
+
+.avatar-right{
+    width: 650px;
+    height: auto;
+   margin-top: 8px;
+}
+
+
+/* media queries */
+
+@media (min-width:1025px) and (max-width:1439px){
+    .avatar-right{
+        width: 580px;
+        transform: translateY(-55px);   
+    }
+
+    .projects-content-center{
+        transform: translateY(-60px);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){                               /* 1024 */
+    
+    .avatar-right{
+        width: 550px;
+        margin-top: 0px;
+    }
+
+    .projects-content-center{
+        transform: translateY(-40px);
+    }
+    
+}
+
+@media (min-width:481px) and (max-width:768px){                                /* 768 */
+    
+    .lifebar{
+        width: 250px;
+        margin-right: 35px;
+    }
+
+    .setup-left img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .projects-content{
+        height: 100vh;
+    }
+    
+    .avatar-right{
+        width: 450px;
+       
+    }
+
+    .projects-content-center{
+        transform: translateY(-90px) translateX(10px);
+    }
+
+    .button-container{
+        transform: translateX(235px);
+    }
+
+    .background{
+        width: 350px;
+        height: 380px;
+    }
+
+    .aboutme-content{
+        width: 310px;
+        height: 350px;
+        margin-left: 18px;
+        margin-top: 12px;    
+    }
+
+    .aboutme-content p{
+        font-size: 0.6rem;
+        margin-top: 5px;
+        line-height: 0.8rem;
+    }
+}
+
+@media (min-width:376px) and (max-width:480px){                            /* 480 */
+    
+    
+    .lifebar{
+        width: 150px;
+        margin-right: 15px;
+    }
+
+    .setup-left{
+        margin-left: 10px;
+    }
+
+    .setup-left img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .avatar-right{
+        width: 241px;
+        transform:  translateX(85px); 
+        margin-top: 0px;  
+    }
+
+    .projects-content{
+        display: block;
+    }
+
+    .projects-content-center{
+        transform: translateY(-10px) translateX(-80px);
+    }
+
+    .button-container{
+        transform: translateX(213px);
+    }
+    .button-contact{
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .background{
+        width: 350px;
+        height: 290px;
+    }
+
+    .aboutme-content{
+        width: 240px;
+        height: 260px;
+        margin-left: 16px;
+        margin-top: 12px;    
+    }
+
+    .aboutme-content p{
+        font-size: 0.5rem;
+        line-height: 0.55rem; 
+    }
+    
+}
+
+@media (min-width:320px) and (max-width:375px){                           /* 375 */
+    
+    .lifebar{
+        width: 120px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .setup-left{
+        margin-left: 10px;
+    }
+
+    .setup-left img{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    .avatar-right{
+        width: 241px;
+        transform:  translateX(60px); 
+        margin-top: 5px;     
+    }
+
+
+    .projects-content{
+        display: block;
+    }
+
+    .projects-content-center{
+        transform: translateY(-10px) translateX(-80px);
+    }
+
+    .button-container{
+        transform: translateX(193px);
+    }
+    .button-contact{
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .background{
+        width: 350px;
+        height: 290px;
+    }
+
+    .aboutme-content{
+        width: 210px;
+        height: 250px;
+        margin-left: 7px;
+        margin-top: 17px;
+        border-radius: 18px;     
+    }
+
+    .aboutme-content p{
+        font-size: 0.42rem;
+        line-height: 0.5rem; 
+    }
+}
+
+@media (min-width:0px) and (max-width:320px){                           /* 320 */
+    
+    .lifebar{
+        width: 120px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
+    .setup-left{
+        margin-left: 10px;
+    }
+
+    .setup-left img{
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    .avatar-right{
+        width: 241px;
+        transform:  translateX(50px); 
+        margin-top: 7px;     
+    }
+
+    .projects-content{
+        display: block;
+    }
+
+    .projects-content-center{
+        transform: translateY(-10px) translateX(-80px);
+    }
+
+    .button-container{
+        transform: translateX(165px);
+    }
+    .button-contact{
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .background{
+        width: 400px;
+        height: 290px;
+    }
+
+    .aboutme-content{
+        width: 153px;
+        height: 250px;
+        margin-left: 7px;
+        margin-top: 17px;
+        border-radius: 15px;    
+    }
+
+    .aboutme-content p{
+        font-size: 0.4rem;
+        line-height: 0.4rem; 
+    }
+}

@@ -1,0 +1,338 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text_color:#f2e518;
+}
+
+
+
+.landing-page{
+    background: url(../images/background_LandinPage.png)no-repeat center center;
+    background-size: cover;
+    height: auto;
+    
+    
+}
+
+.landing-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+
+
+.landing-content{
+    position: absolute;
+    background: rgba(163,211,156,0.4);
+    background-size: contain;
+    border-radius: 130px 130px 3px 3px;
+    border: 0.8px solid rgb(214, 230, 33);
+    box-shadow:  6px 6px 6px rgba(0,0,0,0.9),  2px -2px 0 rgba(255,255,255,0.8);
+    margin:auto 0 auto 60px; 
+    width: 650px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200px) translateY(-50px);
+
+   
+}
+
+.landing-content p{
+    position: relative;
+    display: block;
+    font-family: "Mulish";
+    font-weight: 600;
+    color: var(--text_color) ;
+    text-shadow: 0 2px 3px black;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px auto 0px auto;
+    
+}
+
+.landing-video{
+    height: 107vh;   
+}
+
+.landing-video video{
+    position: fixed;
+    width: 750px;
+    height: 750px;
+    bottom: 0px;
+    right: -80px;  
+}
+
+.button-start{
+    position: absolute;
+    background: rgba(214, 230, 33,0.4) ;
+    border: 0.8px solid #d6e621;
+    box-shadow:  6px 6px 6px rgba(0,0,0,0.9),  2px -2px 0 rgba(255,255,255,0.8);
+    transform: translateX(260px) translateY(150px);  
+    width: 650px;
+    height: 60px;
+    border-radius: 3px 3px 130px 130px;
+}
+
+.button-start a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+   
+}
+
+.btn{
+    position: relative;
+    background: none;
+    border: none;
+    font-family: "Mulish";
+    font-weight: 600;
+    color: white;
+    text-shadow:  3px 4px 3px rgba(0,0,0,0.7),  0.5px -0.5px 0 rgba(255,255,255,0.3);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-top: 5px;
+   
+}
+
+.btn:hover{
+    color: var(--text_color);
+    font-size: 3rem;
+    
+}
+
+/* Media queries */
+
+@media (min-width:1025px) and (max-width:1439px){
+    .landing-content{
+        width: 450px;
+        height: 180px;
+        border-radius: 90px 90px 3px 3px;
+        transform: translateX(115px) translateY(-70px);
+    }
+
+    .landing-content p{
+        font-size: 2rem;
+    }
+
+    .landing-video video{
+        width: 550px;
+        height: 550px;
+        transform: translateX(710px) translateY(108px);
+    }
+
+    .button-start{
+        width: 450px;
+        height: 50px;
+        transform: translateX(176px) translateY(80px);
+    }
+
+    .btn{
+        font-size: 1.8rem;
+    } 
+}
+
+@media(min-width:768px) and (max-width:1024px){
+
+    .landing-content{
+        width: 450px;
+        height: 180px;
+        border-radius: 90px 90px 3px 3px;
+        transform: translateX(95px) translateY(-70px);
+    }
+
+    .landing-content p{
+        font-size: 2rem;
+    }
+
+    .landing-video video{
+        width: 550px;
+        height: 550px;
+    }
+
+    .button-start{
+        width: 450px;
+        height: 50px;
+        transform: translateX(155px) translateY(80px);
+    }
+
+    .btn{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+
+    .landing-content{
+        width: 350px;
+        height: 125px;
+        transform: translateX(30px) translateY(-80px);
+        border-radius: 60px 60px 3px 3px;
+    }
+
+    .landing-content p{
+        font-size: 1.4rem;
+    }
+
+    .landing-video video{
+        width: 525px;
+        height: 525px;
+    }
+
+    .button-start{
+        width: 350px;
+        height: 50px;
+        transform: translateX(90px) translateY(30px);
+    }
+
+    .btn{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:376px) and (max-width:480px){
+    .landing-page{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .landing-container{
+        display: block;
+        height: auto;
+    }
+
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 280px;
+        height: 125px;
+        transform: translateX(20px) translateY(50px);
+    }
+
+    .landing-content p{
+        font-size: 1.3rem;
+        
+    }
+
+    .landing-video{
+        height: 100vh;
+    }
+
+    .landing-video video{
+        width: 450px;
+        height: 450px;
+    }
+
+    .button-start{
+        width: 280px;
+        height: 45px;
+        transform: translateX(82px) translateY(190px);
+    }
+
+    .btn{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+@media (min-width:320px) and (max-width:375px){
+    .landing-page{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .landing-container{
+        display: block;
+        height: auto;
+    }
+
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 280px;
+        height: 125px;
+        transform: translateX(-5px) translateY(50px);
+    }
+
+    .landing-content p{
+        font-size: 1.3rem;
+    }
+
+    .landing-video{
+        height: 100vh;
+    }
+
+    .landing-video video{
+        width: 450px;
+        height: 450px;
+    }
+
+    .button-start{
+        width: 280px;
+        height: 45px;
+        transform: translateX(56px) translateY(190px);
+    }
+
+    .btn{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:0px) and (max-width:320px){
+    .landing-page{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .landing-container{
+        display: block;
+        height: auto;
+    }
+
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 250px;
+        height: 125px;
+        transform: translateX(-25px) translateY(50px);
+    }
+
+    .landing-content p{
+        font-size: 1.2rem;
+    }
+
+    .landing-video{
+        height: 100vh;
+    }
+
+    .landing-video video{
+        width: 450px;
+        height: 450px;
+    }
+
+    .button-start{
+        width: 250px;
+        height: 40px;
+        transform: translateX(37px) translateY(190px);
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
