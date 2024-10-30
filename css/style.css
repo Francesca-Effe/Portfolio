@@ -66,11 +66,10 @@
 }
 
 .landing-video video{
-    position: fixed;
     width: 750px;
     height: 750px;
     bottom: 0px;
-    right: -80px;  
+    right: -80px;
 }
 
 .button-start{
@@ -103,6 +102,7 @@
     font-size: 2.5rem;
     cursor: pointer;
     margin-top: 5px;
+    text-align: center;
    
 }
 
@@ -113,6 +113,72 @@
 }
 
 /* Media queries */
+
+@media (min-width:2560px){
+    .landing-content{
+        transform: translateX(365px) translateY(-150px);
+        width: 750px;
+        height: 270px;
+    }
+
+    .landing-video video{
+        width: 1450px;
+        height: 1450px;
+        bottom: 0px;
+        right: 0px;
+        transform: translateX(1150px) translateY(55px);  
+    }
+
+    .button-start{
+        transform: translateX(426px) translateY(50px); 
+        width: 750px;
+        height: 70px; 
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:1920px) and (max-width:2559px){
+
+    .landing-content{
+        transform: translateX(255px) translateY(-150px);
+    }
+
+    .landing-video video{
+        width: 950px;
+        height: 950px;
+        bottom: 0px;
+        right: 0px;
+        transform: translateX(1000px) translateY(182px);  
+    }
+
+    .button-start{
+        transform: translateX(316px) translateY(20px);  
+    }
+
+}
+
+@media (min-width:1440px) and (max-width:1919px){
+
+    .landing-content{
+        transform: translateX(135px) translateY(-150px);
+    }
+
+
+    .landing-video video{
+        width: 750px;
+        height: 750px;
+        bottom: 0px;
+        right: 0px;
+        transform: translateX(800px) translateY(185px);
+    }
+
+    .button-start{
+        transform: translateX(195px) translateY(20px);  
+    }
+}
 
 @media (min-width:1025px) and (max-width:1439px){
     .landing-content{
@@ -149,7 +215,7 @@
         width: 450px;
         height: 180px;
         border-radius: 90px 90px 3px 3px;
-        transform: translateX(95px) translateY(-70px);
+        transform: translateX(115px) translateY(-300px);
     }
 
     .landing-content p{
@@ -157,14 +223,15 @@
     }
 
     .landing-video video{
-        width: 550px;
-        height: 550px;
+        width: 650px;
+        height: 650px;
+        transform: translateX(105px) translateY(470px);
     }
 
     .button-start{
         width: 450px;
         height: 50px;
-        transform: translateX(155px) translateY(80px);
+        transform: translateX(178px) translateY(-150px);
     }
 
     .btn{
@@ -256,6 +323,7 @@
     .landing-container{
         display: block;
         height: auto;
+        margin: 0 auto;
     }
 
     .landing-content{
@@ -263,6 +331,7 @@
         width: 280px;
         height: 125px;
         transform: translateX(-5px) translateY(50px);
+        margin-left: 45px;
     }
 
     .landing-content p{
@@ -276,12 +345,13 @@
     .landing-video video{
         width: 450px;
         height: 450px;
+        transform: translateX(-30px) translateY(190px);
     }
 
     .button-start{
         width: 280px;
         height: 45px;
-        transform: translateX(56px) translateY(190px);
+        transform: translateX(40px) translateY(190px);
     }
 
     .btn{
