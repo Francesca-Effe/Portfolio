@@ -1,5 +1,4 @@
 
-
  const backpack=document.querySelector('.holder-backpack');
 const shovel=document.querySelector('.holder-shovel');
 const gear=document.querySelector('.holder-gear');
