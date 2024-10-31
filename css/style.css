@@ -38,7 +38,7 @@ body{
     display: block;
     width: 100%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 5%;
     
 }
 
@@ -70,7 +70,7 @@ body{
 }
 
 .landing-video{
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,223 +123,159 @@ body{
 /* Media queries */
 
 
-@media (min-width:1920px) and (max-width:2559px){
-    .landing-video video{
-        margin-top: 212px;
-        width: 1050px;
-        height: 1050px;
-    }
-    
-    .content-left{
-        margin-left: 150px;
-    }
-}
-
-@media (min-width:1440px) and (max-width:1919px){
-    
-    .landing-video video{
-        margin-top: 297px;
-        width: 1050px;
-        height: 1050px;
-        padding-right: 90px;
-    }
-
-    .landing-content{
-        width: 550px;
-    }
-
-    .landing-content p{
-        font-size: 2rem;
-    }
-
-    .content-left{
-      margin-left: 150px;
-      padding: 0px;
-      width: 100%;
-    }
- 
-}
-
-@media (min-width:1025px) and (max-width:1439px){
-
+@media (max-width:480px){
     .landing-container{
         display: block;
     }
-
     .landing-video video{
-        margin-top: 0px;
-        width: 53rem;
-        height: 53rem;
-        margin-bottom: auto;
+        width: 35rem;
+        height: 35rem;
+        margin-top:15% ;
     }
-
     .landing-content{
-        width: 550px;
-        margin-top: 80px;
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
     }
-
     .landing-content p{
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 5px;
     }
-
+    .btn{
+        font-size: 1rem;
+    }
     .content-left{
-      margin-left: 230px;
-      padding: 0px;
-      width: 100%;
+        margin-left: 0%;
+        margin-top:5%;
     }
-
     .button-start{
-        width: 550px;
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
     }
-
 }
-
-@media(min-width:768px) and (max-width:1024px){
-    
+@media (max-width:768px){
     .landing-container{
         display: block;
     }
-
     .landing-video video{
-        margin-top: 0px;
-        width: 53rem;
-        height: 53rem;
-        margin-bottom: auto;
+        width: 45rem;
+        height: 45rem;
+        margin-top:16% ;
     }
-
     .landing-content{
-        width: 550px;
-        margin-top: 80px;
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
     }
-
     .landing-content p{
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 5px;
     }
-
+    .btn{
+        font-size: 1rem;
+    }
     .content-left{
-      padding: 0px;
-      width: 100%;
+        margin-left: 0%;
+        margin-top:5%;
     }
-
     .button-start{
-        width: 550px;
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
     }
-   
 }
-
-@media (min-width:481px) and (max-width:768px){
-    
+@media (max-width:1024px){
     .landing-container{
         display: block;
     }
-
     .landing-video video{
-        margin-top: 0px;
-        width: 47rem;
-        height: 47rem;
-        margin-bottom: auto;
+        width: 60rem;
+        height: 60rem;
+        margin-top:14% ;
     }
-
     .landing-content{
-        width: 350px;
-        margin-top: 80px;
-        border-radius: 70px 70px 3px 3px;
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
     }
-
     .landing-content p{
-        font-size: 1.2rem;
-    }
-
-    .content-left{
-      margin-left: 75px;
-      padding: 0px;
-      width: 100%;
-    }
-
-    .button-start{
-        width: 350px;
-    }
-
-    .btn {
         font-size: 1.2rem;
         padding: 5px;
     }
-
-}
-
-@media (min-width:376px) and (max-width:480px){
-    .landing-container{
-        display: block;
+    .btn{
+        font-size: 1.2rem;
     }
-
-    .landing-video video{
-        margin-top: 0px;
-        width: 35rem;
-        height: 35rem;
-        margin-bottom: auto;
-    }
-
-    .landing-content{
-        width: 250px;
-        margin-top: 80px;
-        border-radius: 70px 70px 3px 3px;
-    }
-
-    .landing-content p{
-        font-size: 1rem;
-    }
-
     .content-left{
-      margin-left: 70px;
-      padding: 0px;
-      width: 100%;
+        margin-left: 0%;
+        margin-top:10%;
     }
-
     .button-start{
-        width: 250px;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 5px;
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
     }
 }
-@media (min-width:320px) and (max-width:375px){
-    
+@media (max-width:1280px){
     .landing-container{
-        display: block;
+        display: flex;
     }
-
     .landing-video video{
-        margin-top: 0px;
-        width: 35rem;
-        height: 35rem;
-        margin-bottom: auto;
+        width: 45rem;
+        height: 45rem;
+        margin-top:17% ;
     }
-
     .landing-content{
-        width: 250px;
-        margin-top: 80px;
-        border-radius: 70px 70px 3px 3px;
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
     }
-
     .landing-content p{
-        font-size: 1rem;
-    }
-
-    .content-left{
-      margin-left: 40px;
-      padding: 0px;
-      width: 100%;
-    }
-
-    .button-start{
-        width: 250px;
-    }
-
-    .btn {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 5px;
+    }
+    .btn{
+        font-size: 1.2rem;
+    }
+    .content-left{
+        margin-left: 0%;
+        margin-top:10%;
+    }
+    .button-start{
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media (min-width:1281px){
+    .landing-container{
+        display: flex;
+    }
+    .landing-video video{
+        width: 60rem;
+        height: 60rem;
+        margin-top:20% ;
+    }
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .landing-content p{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .content-left{
+        margin-left: 0%;
+        margin-top:10%;
+    }
+    .button-start{
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
