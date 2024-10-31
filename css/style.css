@@ -29,6 +29,8 @@ body{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    max-width: 1660px;
+    margin: 0 auto;
     height: 100vh;
     overflow: hidden;
    
@@ -38,7 +40,6 @@ body{
     display: block;
     width: 100%;
     height: auto;
-    margin-left: 5%;
     
 }
 
@@ -121,16 +122,14 @@ body{
 }
 
 /* Media queries */
-
-
-@media (max-width:480px){
+@media (max-width:1280px){
     .landing-container{
-        display: block;
+        display: flex;
     }
     .landing-video video{
-        width: 35rem;
-        height: 35rem;
-        margin-top:15% ;
+        width: 45rem;
+        height: 45rem;
+        margin-top:17% ;
     }
     .landing-content{
         border-radius: 60px 60px 3px 3px;
@@ -138,15 +137,79 @@ body{
         margin-left: 10%;
     }
     .landing-content p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 5px;
     }
     .btn{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .content-left{
         margin-left: 0%;
-        margin-top:5%;
+        margin-top:10%;
+    }
+    .button-start{
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/* @media (min-width:1281px){
+    .landing-container{
+        display: flex;
+    }
+    .landing-video video{
+        width: 60rem;
+        height: 60rem;
+        margin-top:20% ;
+    }
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .landing-content p{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+    .content-left{
+        margin-left: 0%;
+        margin-top:10%;
+    }
+    .button-start{
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+ */
+ @media (max-width:1024px){
+    .landing-container{
+        display: block;
+    }
+    .landing-video video{
+        width: 60rem;
+        height: 60rem;
+        margin-top:14% ;
+    }
+    .landing-content{
+        border-radius: 60px 60px 3px 3px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .landing-content p{
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+    .btn{
+        font-size: 1.2rem;
+    }
+    .content-left{
+        margin-left: 0%;
+        margin-top:10%;
     }
     .button-start{
         margin-top: 15px;
@@ -185,14 +248,14 @@ body{
         margin-left: 10%;
     }
 }
-@media (max-width:1024px){
+@media (max-width:480px){
     .landing-container{
         display: block;
     }
     .landing-video video{
-        width: 60rem;
-        height: 60rem;
-        margin-top:14% ;
+        width: 35rem;
+        height: 35rem;
+        margin-top:15% ;
     }
     .landing-content{
         border-radius: 60px 60px 3px 3px;
@@ -200,15 +263,15 @@ body{
         margin-left: 10%;
     }
     .landing-content p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 5px;
     }
     .btn{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .content-left{
         margin-left: 0%;
-        margin-top:10%;
+        margin-top:5%;
     }
     .button-start{
         margin-top: 15px;
@@ -216,69 +279,3 @@ body{
         margin-left: 10%;
     }
 }
-@media (max-width:1280px){
-    .landing-container{
-        display: flex;
-    }
-    .landing-video video{
-        width: 45rem;
-        height: 45rem;
-        margin-top:17% ;
-    }
-    .landing-content{
-        border-radius: 60px 60px 3px 3px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .landing-content p{
-        font-size: 1.2rem;
-        padding: 5px;
-    }
-    .btn{
-        font-size: 1.2rem;
-    }
-    .content-left{
-        margin-left: 0%;
-        margin-top:10%;
-    }
-    .button-start{
-        margin-top: 15px;
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-@media (min-width:1281px){
-    .landing-container{
-        display: flex;
-    }
-    .landing-video video{
-        width: 60rem;
-        height: 60rem;
-        margin-top:20% ;
-    }
-    .landing-content{
-        border-radius: 60px 60px 3px 3px;
-        width: 80%;
-        margin-left: 10%;
-    }
-    .landing-content p{
-        font-size: 1.5rem;
-        padding: 5px;
-    }
-    .btn{
-        font-size: 1.5rem;
-    }
-    .content-left{
-        margin-left: 0%;
-        margin-top:10%;
-    }
-    .button-start{
-        margin-top: 15px;
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-
-
-
