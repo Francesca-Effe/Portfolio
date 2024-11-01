@@ -129,7 +129,7 @@ body{
 @media (max-width: 1280px) {
     .content-left {
         flex-basis: 45%;
-        margin: auto 40% 45% 10%;
+        margin: auto 40% 20% 10%;
     }
     .landing-content p {
         font-size: 2.5rem; 
@@ -148,7 +148,7 @@ body{
     .content-left {
         flex-basis: 50%;
         max-width: 80%;
-        margin:auto auto 60% auto;
+        margin:auto 42% 30% auto;
     }
     .landing-content{
         border-radius: 100px 100px 3px 3px;
@@ -159,10 +159,9 @@ body{
     }
     .landing-video {
         bottom: 0px; 
-        margin-right: 100px;
     }
     .landing-video video {
-        width: 45rem;
+        width: 35rem;
     }
 }
 
@@ -171,7 +170,7 @@ body{
     .content-left {
         flex-basis: 60%;
         max-width: 90%;
-        margin:auto auto 100% auto;
+        margin:auto auto 70% auto;
     }
     .landing-content{
         border-radius: 100px 100px 3px 3px;
@@ -182,8 +181,8 @@ body{
         padding: 15px;
     }
     .landing-video {
-        bottom: 0px; 
-        margin-right: 20px;
+        bottom: 0px;
+        right: 0px; 
     }
     .landing-video video {
        max-width: 40rem;
@@ -229,7 +228,7 @@ body{
 @media (max-width: 375px) {
     .content-left {
         flex-basis: 100%; 
-        margin-bottom: 350px;
+        margin:auto auto 150% auto;
     }
     .landing-content{
         border-radius: 50px 50px 3px 3px;
@@ -280,7 +279,7 @@ body{
     }
     .landing-video video {
         width: 100%;
-        max-width: 30rem; 
+        max-width: 20rem; 
     }
     .button-start {
         width: 70%; 
