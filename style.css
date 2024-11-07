@@ -407,9 +407,6 @@ span{
     color: var(--text-color);
     margin:  10px auto;
 }
-.tools-info img{
-  /*   margin: auto; */
-}
 
 /* skills */
 .skills{
@@ -811,6 +808,7 @@ span{
     }
     .home{
         flex-direction: column-reverse;
+        overflow: hidden;
     }
     .home-content h3{
         font-size: 2.6rem;
@@ -860,6 +858,100 @@ span{
     }
     .skills-item{
         padding: 30px 10px;
+    }
+    .aboutme-box p{
+        line-height: 3.5rem;
+        font-size: 2.5rem;
+    } 
+    .btn-group-contact{
+        gap: 10px;
+    }
+}
+@media(min-width:320px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .home{
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0px auto;
+    }
+    .home-img{
+        margin-top: 100px;
+    }
+    .home-img video{
+        width: 56vw;
+    }
+    .projects{
+        padding: 100px 15px;
+    }
+    .projects video{
+        margin-bottom: 3rem;
+        max-width: 250px;
+        max-height: 150px;
+        border-radius: 20px;  
+    }
+    
+    .timeline-content video{
+       transform: translateX(-10px);
+    }
+    .projects-img video{
+        border-radius: 50%;
+    }
+    .tools h2{
+        margin-bottom: 5rem;
+    }
+    .tools-img img{
+        margin-bottom: 30px;
+    }
+    .tools-info img{
+        width: 50%;
+    }
+
+    .tools-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills-box{
+        margin: 0;
+    }
+    .skills-box video{
+        width: 30rem;
+    }
+    .skills-item{
+        padding: 10px 10px;
+        margin: 0 0.2rem;
     }
     .aboutme-box p{
         line-height: 3.5rem;
